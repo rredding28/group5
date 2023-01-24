@@ -1,0 +1,10 @@
+---
+- hosts: ManagedNode
+  remote_user: rredding
+
+  tasks:
+  - name: Create File
+    shell:
+      echo "This file was created $(date -u)" > /home/rredding/hopefull.txt
+...
+
